@@ -13,10 +13,8 @@ if(navigator.geolocation){
         long = position.coords.longitude;
         lat = position.coords.latitude;
 
-        // const proxy = `https://cors-anywhere.herokuapp.com/`;
-
-        // const api = `${proxy}api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=48c65db06459facf5629abb8d8d5c7e3
-        // `;
+        
+ 
         const proxy = 'https://cors-anywhere.herokuapp.com/';
         const api = `${proxy}https://api.darksky.net/forecast/fd9d9c6418c23d94745b836767721ad1/${lat},${long}`
         
